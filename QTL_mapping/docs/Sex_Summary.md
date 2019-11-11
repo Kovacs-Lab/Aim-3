@@ -6,5 +6,5 @@ The genetic map serves two functions; to verify input (both user input and the m
 
 
 ![Genotype Completeness](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Genotype_completeness-Sex_Summary.png "Genotype Compleness")
-### Genetype completeness
+### Genotype completeness
 This image is a good way to visualize the genotypic data for our population. Red represents one genotype, blue represents the other, and white represents missing data. A few good trends can be obseved in this data. +100 plants have a higher genetic completeness, and there seems to be a higher incidence of missing genotypic data aronnd individual 160. 
