@@ -13,14 +13,14 @@ This image is a good way to visualize the genotypic data for our population. Red
 
 ![Genotype Completeness After Fill](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Genotype_completeness_after_fill.geno-Sex_Summary.png "Genotype Completeness After Fill")
 ### Genotype completeness after fill
-description of file
+description of file 
 
 
 ![Normal Histogram of Trait](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Normal_Histogram_of_Trait-Sex_Summary.png "Normal Histogram of Trait")
 ### Normal histogram of trait
 
 
-![Frequency of LOD Scores 1000 Permutations](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Fquency_of_LOD_Scores_1000_Permutations-Sex_Summary.png "Frequency of LOD Scores 1000 Permutations")
+![Frequency of LOD Scores 1000 Permutations](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Frequency_of_LOD_Scores_1000_Permutations-Sex_Summary.png "Frequency of LOD Scores 1000 Permutations")
 ### Frequency of LOD scores 1000 permutations
 
 
@@ -29,27 +29,28 @@ description of file
 
 
 > summary(TraitCIM)
-            chr    pos    lod
-1_4021184     1 17.999  0.867
-2_4272907     2 20.323 46.831
-16_9895496    3 70.697  0.196
-4_20708423    4 70.015  0.761
-5_22057342    5 70.468  0.688
-6_16115245    6 58.679  1.192
-7_12552225    7 53.543  0.614
-8_10222817    8 30.628  0.480
-9_5640646     9 24.768  0.840
-10_3959571   10 20.132  0.975
-11_3968001   11 15.048  0.800
-12_769723    12  0.109  1.128
-13_22230221  13 74.436  0.381
-14_27233180  14 81.057  0.738
-15_19559986  15 94.290  1.444
-16_20280959  16 75.099  1.077
-17_679913    17  2.954  1.195
-18_14787621  18 67.438  0.469
-19_3090390   19 12.459  0.832
+      chr | pos | lod
+      ---|---|---
+1_4021184 | 1 17.999 | 0.867
+2_4272907 | 2 20.323 | 46.831
+16_9895496 | 3 70.697 | 0.196
+4_20708423 | 4 70.015 | 0.761
+5_22057342 | 5 70.468 | 0.688
+6_16115245 | 6 58.679 | 1.192
+7_12552225 | 7 53.543 | 0.614
+8_10222817 | 8 30.628 | 0.480
+9_5640646 | 9 24.768 | 0.840
+10_3959571 | 10 20.132 | 0.975
+11_3968001 | 11 15.048 | 0.800
+12_769723 | 12  0.109 | 1.128
+13_22230221 | 13 74.436 | 0.381
+14_27233180 | 14 81.057 | 0.738
+15_19559986 | 15 94.290 | 1.444
+16_20280959 | 16 75.099 | 1.077
+17_679913 | 17  2.954 | 1.195
+18_14787621 | 18 67.438 | 0.469
+19_3090390 | 19 12.459 | 0.832
 
 
-![Genetic Position vs LOD Score (QTL Peaks)](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Genetic_Position_vs_LOD_Score_(QTL_Peaks)-Sex_Summary.png "Genetic Position vs LOD Score (QTL Peaks)")
-### Genetic Position vs LOD Score (QTL Peaks)
+![Genetic Map of chromosome of interest](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Genetic_Map_of_chromosome_of_interest.png "Genetic Map of chromosome of interest")
+### Genetic Map of chromosome of interest
