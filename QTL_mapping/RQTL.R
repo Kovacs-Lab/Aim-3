@@ -28,9 +28,6 @@ Map <- read.cross(format = 'csv',file = fileName
 Map <- jittermap(Map) #make sure no markers are in the same location
 Map <- calc.genoprob(Map,step = 1,map.function = "kosambi") #associate markers with full genotypes
 plot.map(Map) #draw linkage map
-geno.image(Map) #visualize missing data
-Map <- fill.geno(Map,method = "argmax", map.function = "kosambi")
-geno.image(Map)
 plotNormalHistogram(Map$pheno[,colNam]) #normal histogram of pheno of interest
 
 #Compute statistically significant values
@@ -62,21 +59,6 @@ while(cont == 'Y'){
                   #chromosomes are to be investigated
 }
 
-#MQM analysis
-chrMap = subset(Map, chr = chr) #make map 
-geno.image(chrMap) #visualize missing data
-  #subset from last chr investigated
-doMqm = 'Y'#run on first run through
-while(doMqm == 'Y'){
-  doMqm = readline("Would you like to perform mqm? (Y/N): ")
-  Mapmqm <- mqmaugment(chrMap, minprob = .5) #augment missing data with probabilities
-  auto <- mqmautocofactors(chrMap,50) #automatically generate cofactos
-  mqm <- mqmscan(Mapmqm,auto) #Scan chr with MQM
-  geno.image(Mapmqm) #visualise missing data
-  plot.map(Mapmqm) #chr map
-  mqmscanfdr(Mapmqm, mqmscanall,
-             cofactors=auto, n.cluster=2) #scan for false discovery rate
-}
 #MQM also supports some really cool graphics? Which is most
   #appropriate for our work?
 bay <- scanone(Map, method = 'hk') #scan genome with sQTL model
