@@ -59,8 +59,6 @@ while(cont == 'Y'){
                   #chromosomes are to be investigated
 }
 
-#MQM also supports some really cool graphics? Which is most
-  #appropriate for our work?
 bay <- scanone(Map, method = 'hk') #scan genome with sQTL model
 bayesint(bay, chr = chr, prob=0.95, 
          expandtomarkers=TRUE) #calculate bayesian interval
