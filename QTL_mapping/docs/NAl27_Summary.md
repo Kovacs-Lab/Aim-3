@@ -3,7 +3,7 @@ This data is showing the concentration of Al 27, which was then normalized to th
 
 ## Female analysis
 
-![Normal Histogram](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/NAl27/Male/Normal_Histogram.png "Normal Histogram")
+![Normal Histogram](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/NAl27/Female/Normal_Histogram.png "Normal Histogram")
 ### Normal Histrogram of Al 27 data
 The data does appear to follow a bell curve.
 
