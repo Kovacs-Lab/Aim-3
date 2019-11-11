@@ -89,18 +89,17 @@ mkr | chr | pos | lod
 `fitqtl summary()`
 
 >Method: Haley-Knott regression 
+
 >Model:  normal phenotype
+
 >Number of observations : 294 
 
-Full model result
-----------------------------------  
-Model formula: y ~ Q1 
+### Full model result
+#### Model formula: y ~ Q1 
 
-       df         SS       MS      LOD      %var
-Model   1   24276.49 24276.49 0.295589 0.4619358
-Error 292 5231105.00 17914.74                   
-Total 293 5255381.49                            
-      Pvalue(Chi2) Pvalue(F)
-Model    0.2433231 0.2453366
-Error                       
-Total  
+df | SS | MS | LOD | %var | Pvalue(Chi2) | Pvalue(F)
+--- | --- | --- | --- | --- | --- | ---
+Model 1 | 24276.49 | 24276.49 | 0.295589 | 0.4619358 | 0.2433231 | 0.2453366
+Error | 292 | 5231105.00 | 17914.74                   
+Total | 293 | 5255381.49                            
+
