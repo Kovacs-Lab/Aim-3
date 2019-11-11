@@ -64,10 +64,11 @@ Error | 165 134.36762 | 0.8143492
 Total | 166 | 164.69086                             
 
 Estimated effects:
------------------
-               est       SE      t
-Intercept  0.52947  0.07002  7.562
-17@4.0    -5.98717  0.98116 -6.102
+
+Name | est | SE | t
+--- | --- | --- | ---
+Intercept | 0.52947 | 0.07002 | 7.562
+17@4.0 | -5.98717 | 0.98116 | -6.102
 
 even though the LOD is not much higher than the cutoff, and occurs at a generated marker the statistics look very good. 
 
