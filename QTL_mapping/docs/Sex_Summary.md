@@ -56,12 +56,12 @@ mkr |chr | pos | lod
 This table shows the highest peaks on each chromosome. The table also shows at what genetic position the peak occurs. We can see tht most of the high points for any given chromosome lie below 1, and all lie below our statistically significant cut off; except for the peak on chromosome 2, which is indeed the location of the sex locus in grape. 
 
 
-![Genetic Position vs LOD Score (QTL Peaks)](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Male/Genetic_Position_vs_LOD_Score_(QTL_Peaks).png "Genetic Map of chromosome of interest")
-### Genetic Map of chromosome of interest
+![Genetic Position vs LOD Score (QTL Peaks)](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Male/Genetic_Position_vs_LOD_Score_(QTL_Peaks)_Chromosome_of_interest.png "Genetic Map of chromosome of interest")
+### Genetic position vs LOD Choromosome of interest
 description of file
 
 
-![Genetic Map of chromosome of interest](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Male/Genetic_Position_vs_LOD_Score_(QTL_Peaks)_Chromosome_of_interest.png "Genetic Map of chromosome of interest")
+![Genetic Map of chromosome of interest](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Male/Genetic_Map_of_chromosome_of_interest.png "Genetic Map of chromosome of interest")
 ### Genetic Map of chromosome of interest
 description of file
 
