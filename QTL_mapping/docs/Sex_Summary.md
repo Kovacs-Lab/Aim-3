@@ -1,33 +1,33 @@
 # Summary of Sex Locus Trait Analysis
 This should serve as an example of what documentation is needed for QTL Analyses. The location of the sex locus is already known. 
 
-![Genetic Map](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Genetic_Map.png "Genetic Map")
+![Genetic Map](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Male/Genetic_Map.png "Genetic Map")
 ### Genetic Map
 The genetic map serves two functions; to verify input (both user input and the mapping files), and to visualize the marker density of any given region.
 
 
-![Genotype Completeness](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Genotype_completeness.png "Genotype Compleness")
+![Genotype Completeness](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Male/Genotype_completeness.png "Genotype Compleness")
 ### Genotype completeness
 This image is a good way to visualize the genotypic data for our population. Red represents one genotype, blue represents the other, and white represents missing data. A few good trends can be obseved in this data. +100 plants have a higher genetic completeness, and there seems to be a higher incidence of missing genotypic data aronnd individual 160. 
 
 
-![Genotype Completeness After Fill](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Genotype_completeness_after_fill.geno.png "Genotype Completeness After Fill")
+![Genotype Completeness After Fill](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Male/Genotype_completeness_after_fill.geno.png "Genotype Completeness After Fill")
 ### Genotype completeness after fill
-description of file 
+This shows how well fill.geno did at filling up our genotypic data.
 
 
-![Normal Histogram of Trait](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Normal_Histogram_of_Trait.png "Normal Histogram of Trait")
+![Normal Histogram of Trait](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Male/Normal_Histogram_of_Trait.png "Normal Histogram of Trait")
 ### Normal histogram of trait
-description of file 
+This shows the distribution of our trait. This is most important for quantitative traits, so the sex link graph will look a little funny because it only has 2 options, but in traits that are quantitative they should follow a bell curve. If the trait doesn't fall under a bell curve, that doesn't mean anything is wrong, just that more investigation has to be done to see why. 
 
 
-![Frequency of LOD Scores 1000 Permutations](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Frequency_of_LOD_Scores_1000_Permutations.png "Frequency of LOD Scores 1000 Permutations")
+![Frequency of LOD Scores 1000 Permutations](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Male/Frequency_of_LOD_Scores_1000_Permutations.png "Frequency of LOD Scores 1000 Permutations")
 ### Frequency of LOD scores 1000 permutations
-description of file 
+This graph shows how often an LOD score of x occured in the 1000 permutation run of the composite interval mapping, and helps us get a feel for our cut off values. 
 
-![Genetic Position vs LOD Score (QTL Peaks)](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Genetic_Position_vs_LOD_Score_(QTL_Peaks).png "Genetic Position vs LOD Score (QTL Peaks)")
+![Genetic Position vs LOD Score (QTL Peaks)](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Male/Genetic_Position_vs_LOD_Score_(QTL_Peaks).png "Genetic Position vs LOD Score (QTL Peaks)")
 ### Genetic Position vs LOD Score (QTL Peaks)
-
+This is the big graph, the one that shows where your peak is. Basically, LOD or logarithm of odds shows how likely it is that this bit of the genome is responsible for the tested phenotype, or more accurately it shows how *un*likely it is that this bit of the genome *isn't* responsible for the tested phenotypes. All data sets will have some random associations, which we call noise. The analyses above make sure that the peak we see is above the noise, or statistically significant. The blue line shows the statistically significant cut off, and we can see that the peak is way above the statistically significant cut off, and that most of our noise is far below this cut off. A clear distiction like this is a very good thing to see in your data, and makes it far easier to reproduce your results. 
 
 `summary(TraitCIM)`
 
@@ -53,19 +53,21 @@ mkr |chr | pos | lod
 18_14787621 | 18 | 67.438 | 0.469
 19_3090390 | 19 | 12.459 | 0.832
 
+This table shows the highest peaks on each chromosome. The table also shows at what genetic position the peak occurs. We can see tht most of the high points for any given chromosome lie below 1, and all lie below our statistically significant cut off; except for the peak on chromosome 2, which is indeed the location of the sex locus in grape. 
 
-![Genetic Map of chromosome of interest](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Genetic_Map_of_chromosome_of_interest.png "Genetic Map of chromosome of interest")
+
+![Genetic Map of chromosome of interest](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Male/Genetic_Map_of_chromosome_of_interest.png "Genetic Map of chromosome of interest")
 ### Genetic Map of chromosome of interest
-description of file 
+description of file
 
 
-![Genotype completeness of chromosome of interest](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Genotype_completeness_of_chromosome_of_interest.png "Genotype completeness of chromosome of interest")
+![Genotype completeness of chromosome of interest](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Male/Genotype_completeness_of_chromosome_of_interest.png "Genotype completeness of chromosome of interest")
 ### Genotype completeness of chromosome of interest
 description of file 
 
 
 
-![Genotype completeness of chromosome of interest after mqmaugment](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Genotype_completeness_of_chromosome_of_interest_after_mqmaugment.png "Genotype completeness of chromosome of interest after mqmaugment")
+![Genotype completeness of chromosome of interest after mqmaugment](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Male/Genotype_completeness_of_chromosome_of_interest_after_mqmaugment.png "Genotype completeness of chromosome of interest after mqmaugment")
 ### Genotype completeness of chromosome of interest after mqmaugment
 description of file 
 
