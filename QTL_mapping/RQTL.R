@@ -33,7 +33,6 @@ plotNormalHistogram(Map$pheno[,colNam]) #normal histogram of pheno of interest
 #Compute statistically significant values
 TraitCIM1000 <- cim(Map,pheno.col = colNum,method = "hk",
                     map.function = "kosambi",n.perm = 1000) # Function will take a moment to run, determines LOD value
-write.csv(colNam,"Map_Table_1000.csv") #output data
 plot(TraitCIM1000,col = 'green') #show distribution of lod scores
 LOD5 <- summary(TraitCIM1000)[1]
 
@@ -41,7 +40,6 @@ LOD5 <- summary(TraitCIM1000)[1]
 
 TraitCIM<-cim(Map,pheno.col = colNum,method = "hk",
               map.function = "kosambi") #Generate LOD Values
-write.csv(colNam,"Map_Table.csv") #output data
 plot(TraitCIM) #show LOD graph
 abline(h = LOD5,col = "blue") #overlay statistically significant line
 print("If nothing shows up, the values 
