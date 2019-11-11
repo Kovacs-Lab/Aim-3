@@ -108,9 +108,9 @@ A different calculation of the same thing, if these values are similar we're qui
 ### Full model result
 #### Model formula: y ~ Q1 
 
-df | SS | MS | LOD | %var | Pvalue(Chi2) | Pvalue(F)
---- | --- | --- | --- | --- | --- | ---
-Model 1 | 24276.49 | 24276.49 | 0.295589 | 0.4619358 | 0.2433231 | 0.2453366
+Name | df | SS | MS | LOD | %var | Pvalue(Chi2) | Pvalue(F)
+--- | --- | --- | --- | --- | --- | --- | ---
+Model | 1 | 24276.49 | 24276.49 | 0.295589 | 0.4619358 | 0.2433231 | 0.2453366
 Error | 292 | 5231105.00 | 17914.74                   
 Total | 293 | 5255381.49  
 
