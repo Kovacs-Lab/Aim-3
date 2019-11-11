@@ -1,31 +1,31 @@
 # Summary of Sex Locus Trait Analysis
 This should serve as an example of what documentation is needed for QTL Analyses. The location of the sex locus is already known. 
 
-![Genetic Map](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Genetic_Map.png "Genetic Map")
+![Genetic Map](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Male/Genetic_Map.png "Genetic Map")
 ### Genetic Map
 The genetic map serves two functions; to verify input (both user input and the mapping files), and to visualize the marker density of any given region.
 
 
-![Genotype Completeness](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Genotype_completeness.png "Genotype Compleness")
+![Genotype Completeness](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Male/Genotype_completeness.png "Genotype Compleness")
 ### Genotype completeness
 This image is a good way to visualize the genotypic data for our population. Red represents one genotype, blue represents the other, and white represents missing data. A few good trends can be obseved in this data. +100 plants have a higher genetic completeness, and there seems to be a higher incidence of missing genotypic data aronnd individual 160. 
 
 
-![Genotype Completeness After Fill](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Genotype_completeness_after_fill.geno.png "Genotype Completeness After Fill")
+![Genotype Completeness After Fill](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Male/Genotype_completeness_after_fill.geno.png "Genotype Completeness After Fill")
 ### Genotype completeness after fill
 description of file 
 
 
-![Normal Histogram of Trait](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Normal_Histogram_of_Trait.png "Normal Histogram of Trait")
+![Normal Histogram of Trait](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Male/Normal_Histogram_of_Trait.png "Normal Histogram of Trait")
 ### Normal histogram of trait
 description of file 
 
 
-![Frequency of LOD Scores 1000 Permutations](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Frequency_of_LOD_Scores_1000_Permutations.png "Frequency of LOD Scores 1000 Permutations")
+![Frequency of LOD Scores 1000 Permutations](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Male/Frequency_of_LOD_Scores_1000_Permutations.png "Frequency of LOD Scores 1000 Permutations")
 ### Frequency of LOD scores 1000 permutations
 description of file 
 
-![Genetic Position vs LOD Score (QTL Peaks)](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Genetic_Position_vs_LOD_Score_(QTL_Peaks).png "Genetic Position vs LOD Score (QTL Peaks)")
+![Genetic Position vs LOD Score (QTL Peaks)](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Male/Genetic_Position_vs_LOD_Score_(QTL_Peaks).png "Genetic Position vs LOD Score (QTL Peaks)")
 ### Genetic Position vs LOD Score (QTL Peaks)
 
 
@@ -54,18 +54,18 @@ mkr |chr | pos | lod
 19_3090390 | 19 | 12.459 | 0.832
 
 
-![Genetic Map of chromosome of interest](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Genetic_Map_of_chromosome_of_interest.png "Genetic Map of chromosome of interest")
+![Genetic Map of chromosome of interest](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Male/Genetic_Map_of_chromosome_of_interest.png "Genetic Map of chromosome of interest")
 ### Genetic Map of chromosome of interest
 description of file 
 
 
-![Genotype completeness of chromosome of interest](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Genotype_completeness_of_chromosome_of_interest.png "Genotype completeness of chromosome of interest")
+![Genotype completeness of chromosome of interest](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Male/Genotype_completeness_of_chromosome_of_interest.png "Genotype completeness of chromosome of interest")
 ### Genotype completeness of chromosome of interest
 description of file 
 
 
 
-![Genotype completeness of chromosome of interest after mqmaugment](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Genotype_completeness_of_chromosome_of_interest_after_mqmaugment.png "Genotype completeness of chromosome of interest after mqmaugment")
+![Genotype completeness of chromosome of interest after mqmaugment](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Sex_Locus/Male/Genotype_completeness_of_chromosome_of_interest_after_mqmaugment.png "Genotype completeness of chromosome of interest after mqmaugment")
 ### Genotype completeness of chromosome of interest after mqmaugment
 description of file 
 
