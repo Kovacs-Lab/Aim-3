@@ -70,4 +70,6 @@ fitqtl <- fitqtl(Map,formula, pheno.col=colNum, qtl = qtl, covar=NULL,
        dropone=TRUE, get.ests=TRUE,run.checks=TRUE,
        tol=1e-4, maxit=1000, forceXcovar=FALSE) #sees how well 
           #our data fits a given formula 
+          #If you see "error: object of type 'closure' is not subsettable", 
+          # remove "formula," from the fitqtl argument list.
 summary(fitqtl) #Print results of the analysis
