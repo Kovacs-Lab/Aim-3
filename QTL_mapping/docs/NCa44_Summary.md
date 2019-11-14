@@ -1,7 +1,7 @@
-# Normalized Mg 26 Ionomics Analysis Summary
+# Normalized Ca 44 Ionomics Analysis Summary
 
 
-This data represents the concentration of Mg 26, normalized to the z value and shifted to be positive plotted as a phenotype. 
+This data represents the concentration of Ca 44, normalized to the z value and shifted to be positive plotted as a phenotype. 
 
 ## Female Analysis
 
