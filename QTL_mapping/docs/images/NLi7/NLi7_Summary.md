@@ -31,3 +31,24 @@ mkr | chr | pos | lod
 ### Normal histogram of NLi7 follows a normal curve
 ![Genetic Position VS LOD] (https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/NLi7/Male%20/Genetic_Position_vs_LOD_score.png "Genetic Position vs LOD score")
 ### The data shows nothing significant, a slightly larger peak than the rest on chromosome 7
+mkr | chr | pos | lod
+--- | --- | --- | ---
+1_6749776 | 1 | 36.02 | 1.285
+2_17632108 | 2 | 71.78 | 1.342
+3_1937647 | 3 | 8.91 | 0.320
+4_7806435 | 4 | 35.00 | 0.193
+5_21366287 | 5 | 67.29 | 0.893
+6_6067964 | 6 | 29.25 | 0.717
+7_18819915 | 7 | 71.09 | 1.664
+1_5285764 | 8 | 1.87 | 1.034
+14_11901912 | 9 | 31.36 | 0.544
+10_8269070 | 10 | 42.59 | 0.693
+11_18410028 |11 | 63.92 | 1.238
+12_4460847 |12 | 16.92 | 1.491
+13_28874179 | 13 | 90.72 | 0.446
+14_130435 | 14 | 1.35 | 0.482
+15_15938964 | 15 | 68.34 | 0.813
+16_3022275 | 16 | 22.05 | 0.329
+17_11756483 | 17 | 59.04 | 0.453
+5_4316098 | 18 | 101.80 | 1.093
+19_7710108 | 19 | 42.65 | 1.001
