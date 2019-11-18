@@ -1,0 +1,23 @@
+
+		fitqtl summary
+
+Method: Haley-Knott regression 
+Model:  normal phenotype
+Number of observations : 167 
+
+Full model result
+----------------------------------  
+Model formula: y ~ Q1 
+
+       df        SS        MS      LOD    %var Pvalue(Chi2)   Pvalue(F)
+Model   1  10.77109 10.771085 2.180549 5.83584  0.001530276 0.001660286
+Error 165 173.79679  1.053314                                          
+Total 166 184.56788                                                    
+
+
+Estimated effects:
+-----------------
+               est       SE      t
+Intercept  1.36580  0.07942 17.197
+13@4.2    -0.56268  0.17596 -3.198
+
