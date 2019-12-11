@@ -1,3 +1,20 @@
+ # Normalized Zn 66 Analysis Summary
+ 
+ 
+ This data represents the concentration of Zn 66, normalized to the z value and shifted to be positive plotted as a phenotype
+
+![genetic position vs LOD score](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Zn66/Male/Zn_LOD_Male.png "genetic position vs LOD score")
+ 
+ ### Genetic Position vs LOD Score
+ 
+ 
+ ![Normal Histogram](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/Zn66/Male/FreqDistribution_Zn_Male.png "Normal Histogram")
+ 
+ ## Normal Histogram
+ 
+ 
+ `summary(TraitCIM)`
+ 
  mkr | chr | pos | lod
  |---|---|---|---|
 1_7253240 | 1 | 39.76 | 1.116
