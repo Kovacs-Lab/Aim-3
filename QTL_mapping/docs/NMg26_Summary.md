@@ -10,7 +10,7 @@ This data represents the concentration of Mg 26, normalized to the z value and s
 ### Genetic Map
 
 
-![genetic positoin vs LOD Score](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/NMg26/Female/Female_LOD_Mg26.png "genetic position vs LOD Score")
+![genetic position vs LOD Score](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/NMg26/Female/Female_LOD_Mg26.png "genetic position vs LOD Score")
 
 ### Genetic Position vs LOD Score
 
