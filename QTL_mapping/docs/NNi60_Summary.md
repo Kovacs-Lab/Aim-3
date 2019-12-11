@@ -20,7 +20,7 @@ The normal histogram did yeild some results worth investigating. A spatial patte
 
 ## Male Analysis
 
-![genetic positoin vs LOD Score](https://github.com/Ko1ovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/NNi60_1/Male/Genetic_Position_vs_LOD_Score.png "genetic position vs LOD Score")
+![genetic positoin vs LOD Score](https://github.com/Kovacs-Lab/Aim-3/blob/master/QTL_mapping/docs/images/NNi60_1/Male/Genetic_Position_vs_LOD_Score.png "genetic position vs LOD Score")
 
 ### Genetic Position vs LOD Score
 
