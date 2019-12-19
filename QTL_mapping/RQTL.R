@@ -37,7 +37,6 @@ plot(TraitCIM1000,col = 'green') #show distribution of lod scores
 LOD5 <- summary(TraitCIM1000)[1]
 
 #Deterime LOD Values
-
 TraitCIM<-cim(Map,pheno.col = colNum,method = "hk",
               map.function = "kosambi") #Generate LOD Values
 plot(TraitCIM) #show LOD graph
