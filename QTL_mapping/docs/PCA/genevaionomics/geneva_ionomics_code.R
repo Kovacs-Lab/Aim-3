@@ -4,6 +4,7 @@ library(tidyverse)
 library(anomalize)
 library(ggthemes)
 library(ggbeeswarm)
+library(reshape)
 
 #Load ionomics data
 
@@ -77,6 +78,43 @@ ionomics_info_clean <- d
 
 ionomics_info_clean <- ionomics_info_clean %>% select(genus_species, IVNO, B11:Cd111)
 
+#Look at distribution of all species across all elements 
+
+#Convert table so that there's a column for the elements
+ionomics_info_plot <- as.data.frame(ionomics_info_clean)
+ionomics_info_plot <- melt(ionomics_info_plot,id = c('genus_species', 'IVNO'))
+
+pdf("QTL_mapping/docs/PCA/genevaionomics/geneva_ionomics_species_distribution.pdf", width = 8.5, height = 15.5)
+ggplot(ionomics_info_plot,aes(x=genus_species, y=value, fill=genus_species))+
+  geom_quasirandom(alpha = 0.7,size = 1,stroke=0)+
+  geom_boxplot(alpha=0.5, outlier.colour = NA)+
+  facet_wrap(~variable, scales = "free_y",ncol = 3)+
+  theme_few()+
+  theme(axis.text.x = element_text(size = 10, colour = "black", face = "plain", angle = 60,hjust=1), text = element_text(size = 16, face = "bold"),legend.position = "right", panel.grid.major = element_blank(), panel.grid.minor = element_blank(),axis.text.y = element_text(size = 10, colour = "black", face = "plain"))+
+  labs(x ="Species", y="Ion Concentration (ppm)")+
+  theme(legend.position = "none")
+dev.off()  
+
+#Reduce down to just riparia and rupestris, then plot labels for parents 
+
+ionomics_info_parents <- ionomics_info_plot %>% filter(genus_species %in% c("Vitis_rupestris", "Vitis_riparia"))
+
+#I'll label parents with a vertical line across the distributions
+
+rip_rup_palette <- c(  "#d95f0e","#1E88E5")
+
+pdf("QTL_mapping/docs/PCA/genevaionomics/geneva_ionomics_species_distribution_rip_rup.pdf", width = 10, height = 15.5)
+ggplot(ionomics_info_parents,aes(x=value, fill=genus_species))+
+  geom_area(data=ionomics_info_parents, alpha=0.4, stat="bin")+
+  geom_vline(data = subset(ionomics_info_parents,IVNO=="588160"), mapping=aes(xintercept=value), color="#1E88E5", size=1.2, alpha=0.8) +
+  geom_vline(data = subset(ionomics_info_parents,IVNO=="588271"), mapping=aes(xintercept=value), color="#d95f0e", size=1.2, alpha=0.8) +
+  facet_wrap(~variable, scales = "free",ncol = 4)+
+  scale_fill_manual(values=rip_rup_palette)+
+  theme_few()+
+  theme(axis.text.x = element_text(size = 10, colour = "black", face = "plain", angle = 60,hjust=1), text = element_text(size = 16, face = "bold"),legend.position = "right", panel.grid.major = element_blank(), panel.grid.minor = element_blank(),axis.text.y = element_text(size = 10, colour = "black", face = "plain"))+
+  theme(legend.position = "bottom")
+dev.off()  
+
 #Run PCA 
 
 ionomics_pca <- prcomp(ionomics_info_clean[,3:ncol(ionomics_info_clean)], scale=T, center = T)
@@ -102,3 +140,15 @@ ionomics_pc_values %>% ggplot(aes(x=PC1, y=PC3, colour=species))+
 dev.off()
 
 #Looks like there's one rupestris sample that's quite different from everything else (588147) along PC3
+
+#colouring the parents black, can alter this to distinguish them differently, just want to see where they fall in the distribution
+pdf("QTL_mapping/docs/PCA/genevaionomics/geneva_ionomics_species_pc1_pc2_parents.pdf", width = 8.5, height = 5.5)
+p <- ggplot(ionomics_pc_values, aes(x=PC1, y=PC2,colour=species))
+p + 
+  geom_point(data=ionomics_pc_values,  size=3.5, stroke=0, alpha=0.6)+
+  geom_point(data=subset(ionomics_pc_values,sample=="588160"), color="black",  size=3.5, stroke=0, alpha=0.6)+
+  geom_point(data=subset(ionomics_pc_values,sample=="588271"), color="black",  size=3.5, stroke=0, alpha=0.6)+
+  theme_few()+
+  coord_fixed()
+dev.off()
+
